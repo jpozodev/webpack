@@ -1,0 +1,28 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "buildpro": "webpack -p --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpozodev/Webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpozodev/Webpack/issues"
+  },
+  "homepage": "https://github.com/jpozodev/Webpack#readme"
+}
