@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app-mobile.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./app.js":
-/*!****************!*\
-  !*** ./app.js ***!
-  \****************/
+/***/ "./app-mobile.js":
+/*!***********************!*\
+  !*** ./app-mobile.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__ (/*! ./style.css */ \"./style.css\");\r\n__webpack_require__ (/*! ./style.scss */ \"./style.scss\");\r\n\r\nconsole.log(\"Hola mundo desde app principal\");\n\n//# sourceURL=webpack:///./app.js?");
+eval("__webpack_require__ (/*! ./style.css */ \"./style.css\");\r\n__webpack_require__ (/*! ./style.scss */ \"./style.scss\");\r\n\r\nconsole.log(\"Hola mundo desde app version movil\");\n\n//# sourceURL=webpack:///./app-mobile.js?");
 
 /***/ }),
 

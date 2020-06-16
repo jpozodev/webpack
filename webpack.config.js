@@ -5,9 +5,12 @@ const path = require('path');
 module.exports = {
     context: path.resolve(__dirname, "src"),
     mode: 'development',
-    entry: './app.js',
+    entry: {
+        app: './app.js',
+        mobile: './app-mobile.js'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name]-bundle.js',
         path: path.resolve(__dirname, "dist")
     },
     module: {
@@ -30,7 +33,15 @@ module.exports = {
             title: 'Mi primera app generada con webpack',
             filename: 'index2.html',
             template: 'template.html',
-            hash: true
-          })
+            hash: true,
+            chunks: ['app']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Mi primera app version movil generada con webpack',
+            filename: 'index2-mobile.html',
+            template: 'template-mobile.html',
+            hash: true,
+            chunks: ['mobile']
+        })
     ]
 };
