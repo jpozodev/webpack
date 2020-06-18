@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "rimraf": "^3.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
@@ -17,10 +18,11 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "npm run clean && webpack",
     "buildpro": "webpack -p --watch",
     "buildserver": "webpack-dev-server --open",
-    "buildserverwatch": "webpack-dev-server --watch-content-base"
+    "buildserverwatch": "webpack-dev-server --watch-content-base",
+    "clean": "rimraf ./dist"
   },
   "repository": {
     "type": "git",
