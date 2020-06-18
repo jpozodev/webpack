@@ -1,5 +1,6 @@
 body {
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  background-image: url(images/webpack.png);
   color: red;
 }
 
