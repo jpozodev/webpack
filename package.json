@@ -13,11 +13,14 @@
     "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1"
+    "style-loader": "^1.2.1",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
     "build": "webpack",
-    "buildpro": "webpack -p --watch"
+    "buildpro": "webpack -p --watch",
+    "buildserver": "webpack-dev-server --open",
+    "buildserverwatch": "webpack-dev-server --watch-content-base"
   },
   "repository": {
     "type": "git",
